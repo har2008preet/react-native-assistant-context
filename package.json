@@ -1,8 +1,8 @@
 
 {
   "name": "react-native-assistant-context",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Provide context to assistant",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,18 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
+  "author": "Harpreet Singh <har2008preet@gmail.com>",
+  "contributors": [
+    "Harpreet Singh <har2008preet@gmail.com> (https://github.com/har2008preet)"
+  ],
+  "homepage": "https://github.com/har2008preet/react-native-assistant-context#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/har2008preet/react-native-assistant-context.git"
+  },
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
-
   }
 }
