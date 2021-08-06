@@ -16,6 +16,7 @@ import org.json.JSONObject;
 
 public class RNAssistantContextModule extends ReactContextBaseJavaModule {
 
+  public static String assistantUrl;
   private final ReactApplicationContext reactContext;
 
   public RNAssistantContextModule(ReactApplicationContext reactContext) {
@@ -29,21 +30,11 @@ public class RNAssistantContextModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void setWebUri(Callback successCallback, Callback errorCallback) {
+  public void setWebUri(String url, Callback successCallback, Callback errorCallback) {
+    assistantUrl = url;
+  }
 
-    final Activity activity = getCurrentActivity();
-
-    if (activity == null) {
-      String structuredJson = null;
-      AssistContent assistContent = null;
-
-      assistContent.setWebUri(Uri.parse("https://example.com/myCurrentPage"));
-      activity.onProvideAssistContent(assistContent);
-
-//      successCallback(12,"Sefse");
-//      activity.onProvideAssistContent();
-//      errorCallback(ERROR_NO_ACTIVITY, ERROR_NO_ACTIVITY_MESSAGE);
-    }
-
+  public static void setAssistantContext(AssistContent assistContent){
+    assistContent.setWebUri(Uri.parse(assistantUrl));
   }
 }

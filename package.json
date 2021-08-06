@@ -1,7 +1,7 @@
 
 {
-  "name": "react-native-assistant-context",
-  "version": "0.0.1",
+  "name": "react-native-assistant-context-test",
+  "version": "0.0.3",
   "description": "Provide context to assistant",
   "main": "index.js",
   "scripts": {

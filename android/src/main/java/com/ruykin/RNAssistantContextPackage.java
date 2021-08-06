@@ -14,12 +14,6 @@ import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 public class RNAssistantContextPackage implements ReactPackage {
 
-    private Activity mActivity = null;
-
-    public RNAssistantContextPackage(Activity activity) {
-        mActivity = activity;
-    }
-
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
       return Arrays.<NativeModule>asList(new RNAssistantContextModule(reactContext));
