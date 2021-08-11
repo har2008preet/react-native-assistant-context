@@ -35,6 +35,8 @@ public class RNAssistantContextModule extends ReactContextBaseJavaModule {
   }
 
   public static void setAssistantContext(AssistContent assistContent){
-    assistContent.setWebUri(Uri.parse(assistantUrl));
+    if(assistantUrl!=null) {
+      assistContent.setWebUri(Uri.parse(assistantUrl));
+    }
   }
 }
