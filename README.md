@@ -1,5 +1,5 @@
 
-# react-native-assistant-context
+# react-native-assistant-context [![npm version](https://badge.fury.io/js/react-native-assistant-context.svg)](http://badge.fury.io/js/react-native-assistant-context)
 
 ## Getting started
 
